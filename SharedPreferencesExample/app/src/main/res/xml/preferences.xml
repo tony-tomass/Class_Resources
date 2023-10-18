@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+If you want to provide the user with a UI for changing preferences, use a PreferenceActivity
+in combo with SharedPreferences.
+
+Create a PreferenceActivity by doing File > New > Android Resource File
+Set resource type to XML
+Create a name (i.e. preferences.xml)
+Should be created in /res/xml/
+Make sure the root element is a PreferenceScreen
+Add and set the types of preferences and attributes as necessary
+(Example: EditTextPreference, CheckboxPreference, etc.)
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:dialogTitle="Username"
+        android:dialogMessage="Please enter username"
+        android:summary="Username for logging in"
+        android:title="Username"
+        android:key="username"
+        />
+
+    <CheckBoxPreference
+        android:summaryOff="I don't want your spam"
+        android:summaryOn="Sign me up for spam"
+        android:title="Spam"
+        android:key="spam"
+        />
+
+</PreferenceScreen>
